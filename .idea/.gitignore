@@ -1,3 +1,5 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+/data_sample/
+/sam_vit_h_4b8939.pth
