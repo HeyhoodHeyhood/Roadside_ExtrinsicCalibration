@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9bfa734-f403-411b-9c8c-4764db664772" name="Changes" comment="initial commit cont.">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="d9bfa734-f403-411b-9c8c-4764db664772" name="Changes" comment="Update module">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pythonProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pythonProject.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/groundedSAM.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,10 +47,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Notification.DisplayName-DoNotAsk-Vcs Notifications": "VCS notifications",
+    "Notification.DoNotAsk-Vcs Notifications": "true",
     "Python.groundedSAM.executor": "Run",
     "Python.grounded_sam_demo.executor": "Run",
+    "Python.pointcloud_view.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/Tangyuan/grounded/Grounded-Segment-Anything"
+    "last_opened_file_path": "D:/EricFiles/Tangyuan/extrinsic calibration/project"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -58,7 +62,7 @@
       <recent name="D:\Tangyuan\extrinsic calibration\project" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.grounded_sam_demo">
+  <component name="RunManager" selected="Python.pointcloud_view">
     <configuration name="groundedSAM" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject" />
       <option name="ENV_FILES" value="" />
@@ -103,8 +107,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="pointcloud_view" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pythonProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pointcloud_view.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.pointcloud_view" />
         <item itemvalue="Python.grounded_sam_demo" />
         <item itemvalue="Python.groundedSAM" />
       </list>
@@ -113,7 +140,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-f5635417b835-31b6be0877a2-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.18968.29" />
+        <option value="bundled-python-sdk-0509580d9d50-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.14494.241" />
       </set>
     </attachedChunks>
   </component>
@@ -158,12 +185,49 @@
       <option name="project" value="LOCAL" />
       <updated>1732096523905</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add GroundedSAM module">
+      <option name="closed" value="true" />
+      <created>1732157744276</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1732157744276</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add GroundedSAM module">
+      <option name="closed" value="true" />
+      <created>1732157889987</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1732157889987</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Update module">
+      <option name="closed" value="true" />
+      <created>1732157950879</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1732157950879</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="initial commit cont." />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit cont." />
+    <MESSAGE value="Add GroundedSAM module" />
+    <MESSAGE value="Update module" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update module" />
   </component>
 </project>
