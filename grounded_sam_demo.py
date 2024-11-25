@@ -7,6 +7,8 @@ import json
 import torch
 from PIL import Image
 
+os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
+
 sys.path.append(os.path.join(os.getcwd(), "GroundingDINO"))
 sys.path.append(os.path.join(os.getcwd(), "segment_anything"))
 
@@ -113,6 +115,9 @@ def save_mask_data(output_dir, mask_list, box_list, label_list):
     mask_img = torch.zeros(mask_list.shape[-2:])
     for idx, mask in enumerate(mask_list):
         mask_img[mask.cpu().numpy()[0] == True] = value + idx + 1
+
+    mask_img = (mask_img > 0).float()
+
     plt.figure(figsize=(10, 10))
     plt.imshow(mask_img.numpy())
     plt.axis('off')
