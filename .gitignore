@@ -1,9 +1,11 @@
 # Default ignored files
 /shelf/
 /workspace.xml
-/data_sample/
 /sam_vit_h_4b8939.pth
 /groundingdino_swint_ogc.pth
 /outputs/
 .idea/
 /rubbish/
+/dynamic_pcd_outputs_extrinsic/
+/data_sample/
+/masked_img_outputs/

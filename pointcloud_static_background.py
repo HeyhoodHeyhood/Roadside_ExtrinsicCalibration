@@ -27,7 +27,6 @@ def register_and_aggregate_point_clouds_with_frequency(point_clouds, distance_th
 
     # 将所有点云配准到同一坐标系
     for i in range(1, size):
-        print(f"finish work ({i}/{size})")
         source = point_clouds[i]
         target = point_clouds[0] if i == 1 else combined_cloud
 
@@ -59,11 +58,9 @@ def register_and_aggregate_point_clouds_with_frequency(point_clouds, distance_th
         [np.array(key) * distance_threshold for key, count in frequency_dict.items() if count >= min_occurrence])
     return static_points
 
-
-# 主函数
-def main():
+if __name__ == "__main__":
     # 设定点云数据的文件夹路径
-    pcd_folder = r"D:\data\20241101-data\data\G32050700002M00_20241023082902\lidar\pcd"
+    pcd_folder = r"D:\Tangyuan\data\20241101-data\data\G32050700002M00_20241023082902\lidar\pcd"
 
     # 载入和聚合点云数据
     point_clouds = load_point_clouds(pcd_folder)
@@ -74,12 +71,8 @@ def main():
     static_pcd.points = o3d.utility.Vector3dVector(static_points)
 
     # 保存静态场景点云文件
-    o3d.io.write_point_cloud("static_scene.pcd", static_pcd)
+    o3d.io.write_point_cloud("background.pcd", static_pcd)
     print("静态场景已保存为 static_scene.pcd")
 
     # 可视化静态场景
     o3d.visualization.draw_geometries([static_pcd])
-
-
-if __name__ == "__main__":
-    main()
