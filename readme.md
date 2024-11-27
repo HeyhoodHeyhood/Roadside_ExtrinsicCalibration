@@ -6,3 +6,5 @@ The picture segmentation method is from Grounded Segment Anything, especially fr
 Weights can also be downloaded there
 
 You may modify the script parameters as the bottom of the [grounded_same_demo.py](grounded_sam_demo.py) file comments
+
+Please view mainfunc.py for more info
